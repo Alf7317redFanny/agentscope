@@ -6,4 +6,7 @@
 
 from .version import __version__
 
-__all__ = ["__version__"]
+# Default logging level for my experiments - set to DEBUG for more verbose output
+DEFAULT_LOG_LEVEL = "DEBUG"
+
+__all__ = ["__version__", "DEFAULT_LOG_LEVEL"]
