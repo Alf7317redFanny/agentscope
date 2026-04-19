@@ -6,7 +6,11 @@
 
 from .version import __version__
 
-# Default logging level for my experiments - set to DEBUG for more verbose output
-DEFAULT_LOG_LEVEL = "DEBUG"
+# Default logging level for my experiments
+# Switching back to INFO - DEBUG was too noisy during longer runs
+DEFAULT_LOG_LEVEL = "INFO"
 
-__all__ = ["__version__", "DEFAULT_LOG_LEVEL"]
+# Max retries for agent calls - bumping this up since I'm hitting rate limits
+DEFAULT_MAX_RETRIES = 5
+
+__all__ = ["__version__", "DEFAULT_LOG_LEVEL", "DEFAULT_MAX_RETRIES"]
