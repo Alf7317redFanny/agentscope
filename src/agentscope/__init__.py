@@ -13,4 +13,7 @@ DEFAULT_LOG_LEVEL = "INFO"
 # Max retries for agent calls - bumping this up since I'm hitting rate limits
 DEFAULT_MAX_RETRIES = 5
 
-__all__ = ["__version__", "DEFAULT_LOG_LEVEL", "DEFAULT_MAX_RETRIES"]
+# Default timeout in seconds for agent calls - was getting hung requests
+DEFAULT_TIMEOUT = 30
+
+__all__ = ["__version__", "DEFAULT_LOG_LEVEL", "DEFAULT_MAX_RETRIES", "DEFAULT_TIMEOUT"]
